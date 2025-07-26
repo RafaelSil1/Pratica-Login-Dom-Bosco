@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Imagens/java (1).png" type="image/x-icon">
+    <title>Aula 01</title>
 </head>
 <body>
-    <h1>Form</h1>
-    <input type="text" name="nome" placeholder="Name">
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: black;
+    }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 350px;
+            border-radius: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        form{
+            text-align: center;
+        }
+
+        form>a{
+            text-decoration: none;
+        }
+
+    </style>
+
+<div class="main">
+<form action="">
+    <h1>Login</h1>
+    <input type="usermail" name="email" required="required" placeholder="E-mail">
+    <br><br>
+    <input type="passaword" name="senha" required="required" placeholder="Senha">
+    <br><br>
+    <a href="#"><input type="checkbox">Esqueceu a Senha ?</a>
+    <br><br>
+    <button>Entrar</button>
+</form>
+</div>
 </body>
 </html>
