@@ -10,10 +10,13 @@
     <style>
     body{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 90vh;
-        background-color: black;
+        background-image: url(Imagens/a9329b6beb4d240a05cef743877b59eb.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
         .main{
@@ -24,6 +27,8 @@
             width: 350px;
             border-radius: 100px;
             background-color: rgb(255, 255, 255);
+            border: solid 2px;
+            border-color:rgba(0, 0, 255, 0.699);
         }
 
         form{
@@ -34,12 +39,43 @@
             text-decoration: none;
         }
 
-    </style>
+        button{
+            width: 120px;
+            height: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(0, 0, 255, 0.699);
+        }
 
+        input{
+            outline: none;
+            border-radius:5px;
+            border-color: rgba(0, 0, 255, 0.699);
+        }
+
+        hr{
+            border: solid 1px;
+            border-color:  rgba(0, 0, 255, 0.699);
+            width: 135px;
+        }
+
+        footer{
+            position: absolute;
+            color: white;
+            bottom: 1%;
+        }
+
+        footer>a{
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+<!-- Main meu container -->
 <div class="main">
 <form action="">
-    <h1>Login</h1>
-    <input type="usermail" name="email" required="required" placeholder="E-mail">
+    <h1>Login<hr></h1>
+    <input type="email" name="usermail" required="required" placeholder="E-mail">
     <br><br>
     <input type="passaword" name="senha" required="required" placeholder="Senha">
     <br><br>
@@ -48,5 +84,6 @@
     <button>Entrar</button>
 </form>
 </div>
+<footer><a href="https://salesianossp.org.br/ositaquera/?playlist=21c62af&video=09131b6">Dom Bosco - Itaquera 2025 &copy;</a></footer>
 </body>
 </html>
